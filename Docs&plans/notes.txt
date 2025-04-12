@@ -1,0 +1,32 @@
+🧠 Purpose  
+This file holds useful planning links, working notes, and documentation that supports the development of our MySQL Bookstore database.
+
+🔗 ER Diagram Links  
+• Draw.io Link (Editable):  
+  https://app.diagrams.net/#G1dRHtsL3XTJ7p-gip6bZ9FJdCO3jjvErS#%7B%22pageId%22%3A%2262w1ztiSb52zXADRJI9T%22%7D
+
+• Google Drive View Link (Image):  
+  https://drive.google.com/file/d/1dRHtsL3XTJ7p-gip6bZ9FJdCO3jjvErS/view
+
+• Image Preview Embed (For README.md):  
+  ![ER Diagram](https://drive.google.com/uc?export=view&id=1dRHtsL3XTJ7p-gip6bZ9FJdCO3jjvErS)
+
+🗃️ File Structure Plan  
+/README.md – Project overview and team contributions  
+/Docs&plans/notes.txt – Internal notes (this file)  
+/Queries/ – SQL scripts (table creation, insert statements, test queries)  
+  
+
+✅ To-Do  
+- [x] Draw a visual representation of schema tables ✅  
+- [ ] Finalize SQL table creation scripts  
+- [ ] Add 3–5 sample records per table  
+- [ ] Run test queries (e.g., JOINs, aggregates)  
+- [ ] Export final `.sql` file for submission  
+- [ ] Review and update `README.md`
+
+📌 Misc Notes  
+- Use consistent foreign key naming (e.g., `author_id`, `customer_id`)  
+- Consider adding indexes to frequently queried columns  
+- Use `VARCHAR(100)` for general text fields  
+- Use `DECIMAL(10,2)` for prices and monetary values
