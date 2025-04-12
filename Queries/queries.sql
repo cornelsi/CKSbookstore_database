@@ -208,3 +208,56 @@ VALUES
 (23, 7, 1),  -- Customer 23, Address 7 (reuse), Active status
 (24, 8, 1),  -- Customer 24, Address 8 (reuse), Active status
 (25, 1, 1);  -- Customer 25, Address 1 (reuse), Active status
+
+
+-- 11. Shipping Method
+INSERT INTO shipping_method (method_name, cost)
+VALUES
+('Standard Shipping', 5.00),
+('Express Shipping', 10.00),
+('International Shipping', 25.00),
+('Local Courier', 3.00),
+('Pickup Station', 0.00);
+
+-- 12. Order Status
+INSERT INTO order_status (status_name)
+VALUES
+('Pending'),
+('Processing'),
+('Shipped'),
+('Delivered'),
+('Cancelled');
+
+
+-- 13. Customer Order
+INSERT INTO cust_order (customer_id, shipping_method_id, status_id, order_date)
+VALUES
+(1, 1, 1, '2025-04-10'),
+(2, 2, 2, '2025-04-11'),
+(3, 3, 3, '2025-04-12'),
+(4, 1, 4, '2025-04-12'),
+(5, 4, 5, '2025-04-13');
+
+-- 14. Order Line
+
+INSERT INTO order_line (order_id, book_id, quantity, price)
+VALUES
+(1, 1, 2, 14.99),
+(2, 2, 1, 9.99),
+(3, 3, 3, 12.50),
+(4, 4, 1, 18.00),
+(5, 5, 2, 7.75);
+
+-- 15. Order History
+INSERT INTO order_history (order_id, status_id)
+VALUES
+(1, 1),
+(1, 2),
+(2, 1),
+(2, 2),
+(2, 3),
+(3, 1),
+(3, 4),
+(4, 1),
+(5, 1),
+(5, 5);
